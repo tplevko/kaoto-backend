@@ -31,11 +31,11 @@ public class StepCatalog extends AbstractCatalog<Step> {
             catalogs.add(KameletParseCatalog.getParser(
                     jar));
         }
-        for (Repository.Git git : repository.git().orElse(
-                Collections.emptyList())) {
-            catalogs.add(KameletParseCatalog.getParser(
-                    git.url(), git.tag()));
-        }
+//        for (Repository.Git git : repository.git().orElse(
+//                Collections.emptyList())) {
+//            catalogs.add(KameletParseCatalog.getParser(
+//                    git.url(), git.tag()));
+//        }
         return catalogs;
     }
 

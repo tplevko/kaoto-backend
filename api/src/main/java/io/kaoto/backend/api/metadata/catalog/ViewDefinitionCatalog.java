@@ -33,11 +33,11 @@ public class ViewDefinitionCatalog extends AbstractCatalog<ViewDefinition> {
             catalogs.add(ViewDefinitionParseCatalog.getParser(
                     jar));
         }
-        for (Repository.Git git : repository.git().orElse(
-                Collections.emptyList())) {
-            catalogs.add(ViewDefinitionParseCatalog.getParser(
-                    git.url(), git.tag()));
-        }
+//        for (Repository.Git git : repository.git().orElse(
+//                Collections.emptyList())) {
+//            catalogs.add(ViewDefinitionParseCatalog.getParser(
+//                    git.url(), git.tag()));
+//        }
         return catalogs;
     }
 
